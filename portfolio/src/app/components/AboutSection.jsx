@@ -10,9 +10,9 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>Next.js</li>
+        <li>Bootstrap</li>
+        <li>MySQL</li>
         <li>JavaScript</li>
         <li>React</li>
       </ul>
@@ -23,8 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Fullstack Web developer, Udemy</li>
+        <li>Bachelor's of Science in Information Technology, Richfield College</li>
       </ul>
     ),
   },
@@ -80,13 +80,7 @@ set to every project.
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
+            
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
